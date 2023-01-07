@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      function posE(){
+            var a1 = document.getElementById("id2");
+            console.log(a1);
+            if(a1.value > 0){
+                if(a1.value % 2 == 0){
+                alert("positive Even");
+            }
+            else{
+                alert("Positive Odd");
+            }
+          }
+            else{
+                if(a1.value % 2 == 0){
+                    alert("Negative Even");
+                }
+                else{
+                    alert("Negative Odd");
+                }
+            }
+      }
+    </script>
+</head>
+<body>
+    <input required type="text" id="id2">
+    <input type="submit" onClick="posE()">
+</body>
+</body>
+</html>
