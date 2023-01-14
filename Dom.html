@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="id1">
+    <input type="submit" onclick="texts()">
+    <input type="radio" id="g" value="Male">M
+    <input type="radio" id="g" value="Female">F 
+    <input type="submit" onclick="Gender()"> 
+    <script>
+        function texts(){
+        console.log(document.getElementById("id1").value);
+        }
+        function Gender(){
+            var g1=document.getElementById("g");
+            console.log(g1);
+            if(g1.checked==true){
+                alert("you have clicked on "+g1.value);
+            }
+            else{
+                alert("choose a one option");
+            }
+        }
+    </script>
+   
+    <h1 id="h1id" OnMouseOver="change1()" OnMouseOut="change2()">Welcome</h1>
+    <h2 id="h2id" OnMouseOut="inc()">Chennai</h2>
+    <script>
+          function change1(){
+        document.getElementById("h1id").style.color="red";
+        }
+        function change2(){
+            document.getElementById("h1id").style.color="black";   
+        }
+     function inc(){
+        document.getElementById("h2id").style.fontSize="60px";
+     }
+    </script>
+
+    <p>Hello</p>
+    <p>Welcome</p>
+    <p>To web Design</p>
+    <p>Training</p>
+    <h1>A</h1>
+    <h1>B</h1>
+    <h1>C</h1>
+    <input type="submit" onclick="Paras()">
+    <script>
+        function Paras(){
+            var p1=document.getElementsByTagName("p");
+            p1[0].style.fontSize="60px";
+            p1[1].style.color="blue";
+            p1[2].style.fontWeight="bold";
+            p1[3].style.fontStyle="italic";
+            var h1=document.getElementsByTagName("h1");
+            for(var i=0; i<2; i++){
+                h1[i].style.color="pink";
+            }
+        }
+    </script>
+    </body>
+</html>
